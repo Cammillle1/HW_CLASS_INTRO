@@ -22,11 +22,7 @@ public class Book {
     }
 
     public Boolean matches(String word) {
-        if (title.contains(word) ||
-                author.name.contains(word) ||
-                author.surname.contains(word)
-        ) return true;
-        return false;
+        return title.contains(word) || author.name.contains(word) || author.surname.contains(word);
     }
 
     public Integer estimatePrice() {
